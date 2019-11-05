@@ -12,7 +12,8 @@ import { ancillary, input, strong } from '../../color';
 
 const debug = Debug('ionic:lib:integrations:cordova');
 
-export const SUPPORTED_PROJECT_TYPES: readonly ProjectType[] = ['custom', 'ionic1', 'ionic-angular', 'angular'];
+// Edit here for solving the [ERROR] Cordova is not supported for X type of project.
+export const SUPPORTED_PROJECT_TYPES: readonly ProjectType[] = ['react', 'custom', 'ionic1', 'ionic-angular', 'angular'];
 
 export class Integration extends BaseIntegration<ProjectIntegration> {
   readonly name: IntegrationName = 'cordova';
